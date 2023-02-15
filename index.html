@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Importamos el archivo de estilos -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="shortcut icon" href="assets/gatitu.png" type="image/x-icon">
+    <script src="scripts/index.js"></script>
+
+    <!-- Titulo de la página -->
+    <title>Natasha Melgarejo</title>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+
+    <nav>
+        <h3><a href="./index.html">Natasha Melgarejo</a></h3>
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle" id="Hamburguer">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+        <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+                <li><a href="#sobre_mi">Sobre Mí</a></li>
+                <li><a href="#trabajos">Trabajos</a></li>
+                <li><a href="#hablemos">Hablemos</a></li>
+            </ul>
+        </div>
+        <div class="nav_menu_select">
+            <a href="#sobre_mi">Sobre Mí</a>
+            <a href="#trabajos">Trabajos</a>
+            <a href="#hablemos">Hablemos</a>
+        </div>
+    </nav>
+
+    <!-- Main section -->
+
+    <main>
+        <div class="main_Text">
+            <h1>¡Hola! Soy Natasha</h1>
+            <h1><span class="role">UX & Visual Designer</span></h1>
+        </div>
+        <div class="main_ilustration">
+            <img src="assets/undraw_design_components.svg" alt="Ilustration">
+        </div>
+    </main>
+
+    <!-- About Me Section -->
+
+    <section class="AboutMe__Section" id="sobre_mi">
+        <img src="assets/fotito.png">
+        <div class="AboutMe__Data">
+            <h2>Sobre mí</h2>
+            <p>👋¡Hola! Soy Natasha Melgarejo, Diseñadora Visual con especialidad en UX 💻</p>
+            <p>Me apasiona el universo creativo y el diseño de entornos digitales. Considero que el camino a la
+                innovación es posible con ideas creativas y un aprendizaje constante.</p>
+            <p>✔️ Disfruto trabajar en conjunto con equipos interdisciplinarios, los cuales me sirven para nutrir mis
+                conocimientos y compartir mi aprendizaje.</p>
+            <p>Te invito a que me conozcas un poco más a lo largo de mi perfil 👇</p>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+
+    <section class="Works__Section" id="trabajos">
+        <h2>Trabajos</h2>
+        <div class="Secciones">
+            <div class="Works_Data wspace">
+                <img src="assets/trabajitos1.png" class="trabajo1" alt="Trabajos">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iusto voluptatum quae velit
+                    doloremque at quidem iure veniam minus, tempore eaque cupiditate in nisi, voluptates totam facere
+                    pariatur cumque unde repudiandae accusantium ipsam impedit expedita neque obcaecati. Fugit dolore
+                    corrupti odio sequi! Officiis corporis dolorem delectus hic explicabo pariatur quidem.</p>
+                <button><a href="./pages/trabajo1.html"> Ver </a></button>
+            </div>
+            <div class="Works_Data">
+                <img src="assets/trabajitos2.png" alt="Trabajos">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iusto voluptatum quae velit
+                    doloremque at quidem iure veniam minus, tempore eaque cupiditate in nisi, voluptates totam facere
+                    pariatur cumque unde repudiandae accusantium ipsam impedit expedita neque obcaecati. Fugit dolore
+                    corrupti odio sequi! Officiis corporis dolorem delectus hic explicabo pariatur quidem.</p>
+                <button><a href="./pages/trabajo2.html"> Ver </a></button>
+            </div>
+            <div class="Works_Data">
+                <img src="assets/trabajitos3.png" class="trabajo3" alt="Trabajos">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iusto voluptatum quae velit
+                    doloremque at quidem iure veniam minus, tempore eaque cupiditate in nisi, voluptates totam facere
+                    pariatur cumque unde repudiandae accusantium ipsam impedit expedita neque obcaecati. Fugit dolore
+                    corrupti odio sequi! Officiis corporis dolorem delectus hic explicabo pariatur quidem.</p>
+                <button><a href="./pages/trabajo3.html"> Ver </a></button>
+            </div>
+            <div class="Works_Data">
+                <img src="assets/trabajitos4.png" class="trabajo3" alt="Trabajos">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iusto voluptatum quae velit
+                    doloremque at quidem iure veniam minus, tempore eaque cupiditate in nisi, voluptates totam facere
+                    pariatur cumque unde repudiandae accusantium ipsam impedit expedita neque obcaecati. Fugit dolore
+                    corrupti odio sequi! Officiis corporis dolorem delectus hic explicabo pariatur quidem.</p>
+                <button><a href="./pages/trabajo4.html"> Ver </a></button>
+            </div>
+            <div class="Works_Data">
+                <img src="assets/trabajitos5.png" class="trabajo3" alt="Trabajos">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iusto voluptatum quae velit
+                    doloremque at quidem iure veniam minus, tempore eaque cupiditate in nisi, voluptates totam facere
+                    pariatur cumque unde repudiandae accusantium ipsam impedit expedita neque obcaecati. Fugit dolore
+                    corrupti odio sequi! Officiis corporis dolorem delectus hic explicabo pariatur quidem.</p>
+                <button><a href="./pages/trabajo5.html"> Ver </a></button>
+        </div>
+
+    </section>
+
+    <!-- Contact Section / Form -->
+
+    <form id="hablemos">
+        <h2>Hablemos :)</h2>
+        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="text" name="message" id="message" placeholder="Mensaje">
+        <button>Enviar</button>
+    </form>
+
+    <!-- Footer -->
+
+    <footer>
+        <h3>Natasha Melgarejo - 2022</h3>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,631 @@
+/* Importamos la tipografía */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Definimos las variables de nuestra página */
+
+:root {
+
+    /* Colores */
+
+    --backgroundColor: rgba(22, 22, 26, 1);
+    --violetColor: rgba(127, 90, 240, 1);
+    --violetColorHover: rgb(155, 122, 252);
+    --darkVioletColor: rgba(63, 61, 86, 1);
+    --greyColor: rgba(145, 145, 155, 1);
+    --whiteColor: rgba(244, 239, 244, 1);
+
+    /* Fuente */
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+/* Definimos las propiedades generales para todo el proyecto.*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Estilos de texto */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+    color: var(--whiteColor);
+}
+
+/* Estilos del Body */
+
+body {
+    background: var(--backgroundColor);
+}
+
+/*-------------------- Navigation Bar ----------------------*/
+
+
+
+/* Posición de la barra de navegación*/
+
+nav {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 1.5vw 4.16vw 0 4.16vw;
+    padding: 0 1vw;
+}
+
+.sidebarMenuInner {
+    display: none;
+}
+
+/* Color del texto y tamaño */
+
+nav h3 {
+    font-size: 22px;
+}
+
+.nav_menu_select a {
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+/* Hover */
+
+nav a:hover {
+    color: var(--violetColor);
+    transition: all 300ms ease-in-out;
+}
+
+
+
+/*-------------------- Main Section ----------------------*/
+
+
+/* Posición Main */
+main h1 {
+    font-size: 2.08vw;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7.3vw 6.25vw 0;
+}
+
+.main_Text {
+    margin-right: 7.3vw;
+}
+
+
+
+/* Role SPAN color*/
+
+.role {
+    color: var(--violetColor);
+}
+
+
+/*-------------------- About Me Section ----------------------*/
+
+/* Posición de los textos */
+.AboutMe__Section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.AboutMe__Section img {
+    margin-right: 130px;
+    border: 8px solid var(--violetColor);
+    border-radius: 54px;
+}
+
+.AboutMe__Section {
+    margin: 13.5vw 6.25vw 0 6.25vw;
+}
+
+.AboutMe__Section h2 {
+    font-size: 32px;
+    margin-bottom: 1.5vw;
+}
+
+.AboutMe__Data p {
+    margin-bottom: 1.2vw;
+}
+
+/*-------------------- Works Section ----------------------*/
+
+/* Posición del Work Section*/
+
+.Works__Section {
+    margin: 6vw 6.25vw 0 6.25vw;
+    flex-direction: column;
+}
+
+.Works__Section h2 {
+    font-size: 32px;
+    margin-bottom: 1.5vw;
+}
+
+/* Estilos de la imágen */
+
+.Secciones {
+    display: flex;
+}
+
+.trabajo1 {
+    width: 32.81vw;
+}
+
+.Works__Section img {
+    border-radius: 16px;
+    width: 42.8vw;
+    margin-bottom: 1vw;
+}
+
+/* Posición de la información */
+
+.Works_Data {
+    margin-top: 1vw;
+    margin-right: 1.04vw;
+}
+
+.Works_Data p {
+    max-width: 42.8vw;
+}
+
+/* Estilos del botón */
+
+.Works_Data button {
+    color: var(--whiteColor);
+    background: var(--violetColor);
+    margin-top: 1vw;
+    padding: 0.68vw 1.5vw;
+    border-radius: 10px;
+    font-size: 0.93vw;
+
+    cursor: pointer;
+}
+
+.Works_Data button:hover {
+    background: var(--violetColorHover);
+    transition: all 300ms ease-in-out;
+}
+
+/*-------------------- Contact Section / Form ----------------------*/
+
+
+/* Posición del formulario */
+
+form {
+    margin: 10vw 6.25vw 0 6.25vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tamaño del texto y estilos de los Inputs y Botones */
+
+form h2 {
+    font-size: 32px;
+    margin-bottom: 2vw;
+}
+
+#email {
+    padding: 0.5vw 20.8vw 0.5vw 1vw;
+    color: var(--whiteColor);
+    background: transparent;
+    border: 2px solid var(--greyColor);
+    border-radius: 8px;
+    margin-bottom: 0.3vw;
+}
+
+#message {
+    padding: 0.5vw 20.8vw 4.4vw 1vw;
+    color: var(--whiteColor);
+    background: transparent;
+    border: 2px solid var(--greyColor);
+    border-radius: 8px;
+}
+
+form button {
+    margin-top: 0.8vw;
+    margin-bottom: 10vw;
+    padding: 0.5vw 2vw;
+    color: var(--whiteColor);
+    background: var(--violetColor);
+    border-radius: 0.4vw;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: var(--violetColorHover);
+}
+
+/*-------------------- Footer ----------------------*/
+
+/* posición del footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vw 6.25vw 0 6.25vw;
+    margin-bottom: 1.5vw;
+}
+
+
+
+
+/* Media querys */
+
+/* Tablet */
+
+@media only screen and (max-width: 780px) {
+
+    /* Navigation Bar */
+
+    nav {
+        margin-top: 2.04vw;
+    }
+
+    .nav_menu_select a {
+        font-size: 16px;
+    }
+
+    nav h3 {
+        font-size: 16px;
+    }
+
+    /* Main section */
+
+    .main_Text h1 {
+        font-size: 2.54vw;
+    }
+
+    .main_ilustration img {
+        width: 48.45vw;
+    }
+
+    /* Aboutme section */
+
+    .AboutMe__Section {
+        align-items: flex-start;
+    }
+
+    .AboutMe__Section img {
+        width: 32vw;
+        margin-right: 6.3vw;
+    }
+
+    .AboutMe__Data h2 {
+        font-size: 20px;
+    }
+
+    .AboutMe__Data p {
+        font-size: 16px;
+    }
+
+    /* Works section */
+
+    .Works__Section h2 {
+        font-size: 20px;
+    }
+
+    .Works_Data {
+        margin-right: 2vw;
+    }
+
+    .Works_Data p {
+        font-size: 14px;
+    }
+
+    .Works_Data button {
+        font-size: 16px;
+        padding: 0.90vw 2.4vw;
+    }
+
+    /* Contact section */
+
+    form {
+        margin-top: 12vw;
+    }
+
+    form h2 {
+        font-size: 20px;
+    }
+
+    form button {
+        font-size: 16px;
+        padding: 0.9vw 4vw;
+        border-radius: 10px;
+    }
+
+    /* Footer */
+
+    footer h3 {
+        font-size: 16px;
+    }
+}
+
+/* Celular */
+
+@media only screen and (max-width: 360px) {
+
+    /* Navigation Section */
+
+    body {
+        /* overflow-y: hidden; */
+        overflow-x: hidden;
+    }
+
+    #sidebarMenu {
+        height: 100%;
+        position: fixed;
+        left: 0;
+        width: 100%;
+        /* margin-top: 60px; */
+        transform: translateX(400px);
+        transition: transform 250ms ease-in-out;
+        background: linear-gradient(180deg, var(--violetColor) 0%, var(--darkVioletColor) 100%);
+        top: 0;
+    }
+
+    .sidebarMenuInner {
+        position: absolute;
+        display: block;
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.10);
+        top: 108px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sidebarMenuInner li {
+        list-style: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 20px;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    .sidebarMenuInner li span {
+        display: block;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.50);
+    }
+
+    .sidebarMenuInner li a {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    input[type="checkbox"]:checked~#sidebarMenu {
+        transform: translateX(0);
+    }
+
+    input[type=checkbox] {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    .sidebarIconToggle {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        cursor: pointer;
+        position: absolute;
+        z-index: 99;
+        height: 100%;
+        width: 100%;
+        top: 11px;
+        left: 321px;
+        height: 22px;
+        width: 22px;
+    }
+
+    .spinner {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+    }
+
+    .diagonal.part-1 {
+        position: relative;
+        transition: all 0.3s;
+        box-sizing: border-box;
+        float: left;
+    }
+
+    .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+    }
+
+    input[type=checkbox]:checked~.sidebarIconToggle>.horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        opacity: 0;
+    }
+
+    input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-1 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(135deg);
+        margin-top: 8px;
+    }
+
+    input[type=checkbox]:checked~.sidebarIconToggle>.diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(-135deg);
+        margin-top: -9px;
+    }
+
+    nav {
+        margin-top: 2.04vw;
+    }
+
+    .nav_menu_select a {
+        font-size: 16px;
+    }
+
+    nav h3 {
+        font-size: 15px;
+    }
+
+    .hamburguer_menu {
+        position: absolute;
+        display: block;
+        width: 24px;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .hamburguer_menu:hover {
+        width: 25px;
+        transition: all 300ms ease-in-out;
+    }
+
+    .nav_menu_select a {
+        display: none;
+    }
+
+
+    /* Main */
+   
+    main {
+        justify-content: unset;
+        flex-direction: column;
+        margin-left: 30vw;
+        margin-top: 12.3vw;
+    }
+
+    .main_Text h1 {
+        font-size: 4.54vw;
+    }
+        /* margin-right: 0vw; */
+   
+    .main_Text {
+        margin: 0 0 5vw 0;
+    }
+    
+    /* Main ilustration */
+
+    .main_ilustration img {
+        width: 244px;
+    }
+
+    /* About Me */
+
+    .AboutMe__Section {
+        flex-direction: column;
+    }
+
+    .AboutMe__Section img {
+        width: 56.7vw;
+    }
+
+    .AboutMe__Data {
+        margin-top: 12px;
+    }
+    .AboutMe__Data h2 {
+        font-size: 24px;
+    }
+
+    .AboutMe__Data p {
+        font-size: 14px;
+    }
+
+    /* Work Section */
+    .Works__Section {
+        flex-direction: column;
+        margin-top: 56px;
+    }
+    
+    .Works__Section img {
+        width: 85.8vw;
+    }
+    
+    .Works_Data p {
+        max-width: 85.8vw;
+    }
+
+    .wspace {
+        margin-bottom: 34px;
+    }
+    .Secciones {
+        flex-direction: column;
+    }
+
+    .Works_Data button {
+        font-size: 16px;
+        padding: 2.4vw 6vw;
+    }
+
+    /* Form */
+
+    form {
+        margin-top: 16vw;
+    }
+
+    .form h2 {
+        font-size: 24px;
+    }
+
+    .form button {
+        font-size: 16px;
+        padding: 2.8vw 8vw;
+        border-radius: 10px;
+    }
+
+
+    /* Footer */
+
+    footer {
+        font-size: 16px;
+    }
+}
+
