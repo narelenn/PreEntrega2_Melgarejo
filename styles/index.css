@@ -64,8 +64,14 @@ body {
 /* Posición de la barra de navegación*/
 
 .bg-dark {
-    --bs-bg-opacity: 0;
+    --bs-bg-opacity: 1;
+    color: var(--backgroundColor);
 }
+
+/* nav {
+    position: sticky;
+    top: 0;
+} */
 
 .navbar-brand {
     color: var(--whiteColor);
