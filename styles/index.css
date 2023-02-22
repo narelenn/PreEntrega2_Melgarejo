@@ -63,38 +63,13 @@ body {
 
 /* Posición de la barra de navegación*/
 
-nav {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-
-    margin: 1.5vw 4.16vw 0 4.16vw;
-    padding: 0 1vw;
+.bg-dark {
+    --bs-bg-opacity: 0;
 }
 
-.sidebarMenuInner {
-    display: none;
+.navbar-brand {
+    color: var(--whiteColor);
 }
-
-/* Color del texto y tamaño */
-
-nav h3 {
-    font-size: 22px;
-}
-
-.nav_menu_select a {
-    font-size: 20px;
-    margin-right: 50px;
-}
-
-/* Hover */
-
-nav a:hover {
-    color: var(--violetColor);
-    transition: all 300ms ease-in-out;
-}
-
 
 
 /*-------------------- Main Section ----------------------*/
@@ -170,7 +145,8 @@ main {
 /* Estilos de la imágen */
 
 .Secciones {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .trabajo1 {
@@ -187,7 +163,7 @@ main {
 
 .Works_Data {
     margin-top: 1vw;
-    margin-right: 1.04vw;
+    margin-right: 2.04vw;
 }
 
 .Works_Data p {

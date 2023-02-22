@@ -1,0 +1,58 @@
+/* Importamos la tipografía */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* Definimos las variables de nuestra página */
+
+:root {
+
+    /* Colores */
+
+    --backgroundColor: rgba(22, 22, 26, 1);
+    --violetColor: rgba(127, 90, 240, 1);
+    --violetColorHover: rgb(155, 122, 252);
+    --darkVioletColor: rgba(63, 61, 86, 1);
+    --greyColor: rgba(145, 145, 155, 1);
+    --whiteColor: rgba(244, 239, 244, 1);
+
+    /* Fuente */
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+/* Definimos las propiedades generales para todo el proyecto.*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    appearance: none;
+    border: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/* Estilos de texto */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
+    color: var(--whiteColor);
+}
+
+/* Estilos del Body */
+
+body {
+    background: var(--backgroundColor);
+}
