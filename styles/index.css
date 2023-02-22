@@ -69,6 +69,12 @@ body {
 
 .navbar-brand {
     color: var(--whiteColor);
+    margin-left: 5.2vw;
+    margin-right: 50vw;
+}
+
+.text-warning {
+    color: var(--whiteColor)!important;
 }
 
 
