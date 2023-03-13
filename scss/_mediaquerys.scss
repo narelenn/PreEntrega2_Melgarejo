@@ -1,0 +1,299 @@
+$color_1: #fff;
+$color_2: rgba(255, 255, 255, 0.50);
+$background-color_1: #fff;
+
+/* Media querys */
+/* Tablet */
+/* Navigation Bar */
+/* Main section */
+/* Aboutme section */
+/* Works section */
+/* Contact section */
+/* Footer */
+/* Celular */
+/* Navigation Section */
+/* Main */
+/* margin-right: 0vw; */
+/* Main ilustration */
+/* About Me */
+/* Work Section */
+/* Form */
+/* Footer */
+@media only screen and (max-width: 780px) {
+	nav {
+		margin-top: 2.04vw;
+		h3 {
+			font-size: 16px;
+		}
+	}
+	.nav_menu_select {
+		a {
+			font-size: 16px;
+		}
+	}
+	.main_Text {
+		h1 {
+			font-size: 2.54vw;
+		}
+	}
+	.main_ilustration {
+		img {
+			width: 48.45vw;
+		}
+	}
+	.AboutMe__Section {
+		align-items: flex-start;
+		img {
+			width: 32vw;
+			margin-right: 6.3vw;
+		}
+	}
+	.AboutMe__Data {
+		h2 {
+			font-size: 20px;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+	.Works__Section {
+		h2 {
+			font-size: 20px;
+		}
+	}
+	.Works_Data {
+		margin-right: 2vw;
+		p {
+			font-size: 14px;
+		}
+		button {
+			font-size: 16px;
+			padding: 0.90vw 2.4vw;
+		}
+	}
+	form {
+		margin-top: 12vw;
+		h2 {
+			font-size: 20px;
+		}
+		button {
+			font-size: 16px;
+			padding: 0.9vw 4vw;
+			border-radius: 10px;
+		}
+	}
+	footer {
+		h3 {
+			font-size: 16px;
+		}
+	}
+}
+@media only screen and (max-width: 360px) {
+	body {
+		overflow-x: hidden;
+	}
+	#sidebarMenu {
+		height: 100%;
+		position: fixed;
+		left: 0;
+		width: 100%;
+		transform: translateX(400px);
+		transition: transform 250ms ease-in-out;
+		background: linear-gradient(180deg, var(--violetColor) 0%, var(--darkVioletColor) 100%);
+		top: 0;
+	}
+	.sidebarMenuInner {
+		position: absolute;
+		display: block;
+		margin: 0;
+		padding: 0;
+		border-top: 1px solid rgba(255, 255, 255, 0.10);
+		top: 108px;
+		width: 100%;
+		text-align: center;
+		li {
+			list-style: none;
+			color: $color_1;
+			text-transform: uppercase;
+			font-weight: bold;
+			padding: 20px;
+			cursor: pointer;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+			span {
+				display: block;
+				font-size: 14px;
+				color: $color_2;
+			}
+			a {
+				color: $color_1;
+				text-transform: uppercase;
+				font-weight: bold;
+				cursor: pointer;
+				text-decoration: none;
+			}
+		}
+	}
+	input[type="checkbox"] {
+		&:checked~#sidebarMenu {
+			transform: translateX(0);
+		}
+	}
+	input[type=checkbox] {
+		transition: all 0.3s;
+		box-sizing: border-box;
+		display: none;
+		&:checked~.sidebarIconToggle {
+			>.horizontal {
+				transition: all 0.3s;
+				box-sizing: border-box;
+				opacity: 0;
+			}
+			>.diagonal.part-1 {
+				transition: all 0.3s;
+				box-sizing: border-box;
+				transform: rotate(135deg);
+				margin-top: 8px;
+			}
+			>.diagonal.part-2 {
+				transition: all 0.3s;
+				box-sizing: border-box;
+				transform: rotate(-135deg);
+				margin-top: -9px;
+			}
+		}
+	}
+	.sidebarIconToggle {
+		transition: all 0.3s;
+		box-sizing: border-box;
+		cursor: pointer;
+		position: absolute;
+		z-index: 99;
+		height: 100%;
+		width: 100%;
+		top: 11px;
+		left: 321px;
+		height: 22px;
+		width: 22px;
+	}
+	.spinner {
+		transition: all 0.3s;
+		box-sizing: border-box;
+		position: absolute;
+		height: 3px;
+		width: 100%;
+		background-color: $background-color_1;
+	}
+	.horizontal {
+		transition: all 0.3s;
+		box-sizing: border-box;
+		position: relative;
+		float: left;
+		margin-top: 3px;
+	}
+	.diagonal.part-1 {
+		position: relative;
+		transition: all 0.3s;
+		box-sizing: border-box;
+		float: left;
+	}
+	.diagonal.part-2 {
+		transition: all 0.3s;
+		box-sizing: border-box;
+		position: relative;
+		float: left;
+		margin-top: 3px;
+	}
+	nav {
+		margin-top: 2.04vw;
+		h3 {
+			font-size: 15px;
+		}
+	}
+	.nav_menu_select {
+		a {
+			font-size: 16px;
+			display: none;
+		}
+	}
+	.hamburguer_menu {
+		position: absolute;
+		display: block;
+		width: 24px;
+		height: auto;
+		cursor: pointer;
+		&:hover {
+			width: 25px;
+			transition: all 300ms ease-in-out;
+		}
+	}
+	main {
+		justify-content: unset;
+		flex-direction: column;
+		margin-left: 30vw;
+		margin-top: 12.3vw;
+	}
+	.main_Text {
+		h1 {
+			font-size: 4.54vw;
+		}
+		margin: 0 0 5vw 0;
+	}
+	.main_ilustration {
+		img {
+			width: 244px;
+		}
+	}
+	.AboutMe__Section {
+		flex-direction: column;
+		img {
+			width: 56.7vw;
+		}
+	}
+	.AboutMe__Data {
+		margin-top: 12px;
+		h2 {
+			font-size: 24px;
+		}
+		p {
+			font-size: 14px;
+		}
+	}
+	.Works__Section {
+		flex-direction: column;
+		margin-top: 56px;
+		img {
+			width: 85.8vw;
+		}
+	}
+	.Works_Data {
+		p {
+			max-width: 85.8vw;
+		}
+		button {
+			font-size: 16px;
+			padding: 2.4vw 6vw;
+		}
+	}
+	.wspace {
+		margin-bottom: 34px;
+	}
+	.Secciones {
+		flex-direction: column;
+	}
+	form {
+		margin-top: 16vw;
+	}
+	.form {
+		h2 {
+			font-size: 24px;
+		}
+		button {
+			font-size: 16px;
+			padding: 2.8vw 8vw;
+			border-radius: 10px;
+		}
+	}
+	footer {
+		font-size: 16px;
+	}
+}
