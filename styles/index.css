@@ -23,6 +23,10 @@ main h1 {
   color: #f4eff4;
 }
 
+img {
+  width: 40vw;
+}
+
 .main_Text {
   margin-right: 7.3vw;
 }
@@ -231,7 +235,7 @@ footer {
 /* Work Section */
 /* Form */
 /* Footer */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 359px) {
   body {
     overflow-x: hidden;
   }
@@ -391,7 +395,7 @@ footer {
     font-size: 24px;
   }
   .AboutMe__Data p {
-    font-size: 14px;
+    font-size: 0.72;
   }
   .Works__Section {
     flex-direction: column;
