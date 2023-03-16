@@ -8,7 +8,7 @@
 }
 
 .text-warning {
-  color: var(#f4eff4);
+  color: #f4eff4 !important;
 }
 
 /* Posición Main */
@@ -39,7 +39,7 @@ body {
 }
 .AboutMe__Section img {
   margin-right: 130px;
-  border: 8px solid var(#7f5af0);
+  border: 8px solid #7f5af0;
   border-radius: 54px;
 }
 .AboutMe__Section h2 {
@@ -165,15 +165,6 @@ footer {
 /* Works section */
 /* Contact section */
 /* Footer */
-/* Celular */
-/* Navigation Section */
-/* Main */
-/* margin-right: 0vw; */
-/* Main ilustration */
-/* About Me */
-/* Work Section */
-/* Form */
-/* Footer */
 @media only screen and (max-width: 780px) {
   nav {
     margin-top: 2.04vw;
@@ -231,6 +222,15 @@ footer {
     font-size: 16px;
   }
 }
+/* Celular */
+/* Navigation Section */
+/* Main */
+/* margin-right: 0vw; */
+/* Main ilustration */
+/* About Me */
+/* Work Section */
+/* Form */
+/* Footer */
 @media only screen and (max-width: 360px) {
   body {
     overflow-x: hidden;
