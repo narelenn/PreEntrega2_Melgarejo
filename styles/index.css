@@ -225,6 +225,12 @@ footer {
   footer h3 {
     font-size: 16px;
   }
+  .Works-Section img {
+    width: 50vw;
+  }
+  .Seccioness {
+    margin-bottom: 50px;
+  }
 }
 /* Celular */
 /* Navigation Section */
@@ -235,7 +241,7 @@ footer {
 /* Work Section */
 /* Form */
 /* Footer */
-@media only screen and (max-width: 359px) {
+@media only screen and (max-width: 358px) {
   body {
     overflow-x: hidden;
   }
@@ -431,6 +437,27 @@ footer {
   footer {
     font-size: 16px;
   }
+}
+.Works-Section {
+  margin: 6vw 6.25vw 0 6.25vw;
+  margin-bottom: 1.5vw;
+  flex-direction: column;
+}
+.Works-Section h2 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.Works-Section img {
+  border-radius: 16px;
+  width: 60vw;
+  margin-bottom: 1vw;
+}
+.Works-Section p {
+  max-width: 60vw;
+  margin-bottom: 3rem;
+  color: #fff;
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -78,6 +78,17 @@ $background-color_1: #fff;
 			font-size: 16px;
 		}
 	}
+	// trabajos
+	.Works-Section {
+		img {
+			width: 50vw;
+		}
+	}
+	.Seccioness {
+		
+		margin-bottom: 50px;
+
+	}
 }
 /* Celular */
 /* Navigation Section */
@@ -88,7 +99,7 @@ $background-color_1: #fff;
 /* Work Section */
 /* Form */
 /* Footer */
-@media only screen and (max-width: 359px) {
+@media only screen and (max-width: 358px) {
 	body {
 		overflow-x: hidden;
 	}
